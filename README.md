@@ -1,7 +1,6 @@
-# Coding Test
+# Coding Test 👋
 
-Do you want to join the engineering team at [Prodeasy](https://prodeasy.com) as a UI developer?
-
+Do you want to join the engineering team at [Prodeasy](https://prodeasy.com) as a UI developer? 
 We have created this exercise in order to gain insights into your development skills. The focus should be, to apply a well-thought-out solution to create a structure, which is robust and scalable in the time frame provided. It’s ok if you are not able to complete the assignment. 
 
 
@@ -17,7 +16,7 @@ You can work on any problem that you're comfortable with.
 
 ## Procedure
 
-We would like you to send us (a link to) your pull request link (that we can access) at drawat@prodeasy.com  
+We would like you to send us (a link to) your pull request link (that we can reveiw) at drawat@prodeasy.com  
 
 Or if you are new to GH you can follow the below process:
 
@@ -26,7 +25,7 @@ Or if you are new to GH you can follow the below process:
 
 - Push your code in your branch.
 
-- Create a pull request for the same.
+- Create a pull request for the main branch.
 
 - Share your pull request link at 
 drawat@prodeasy.com
@@ -36,4 +35,4 @@ Make sure to add some documentation on how to run your app.
 
 There is no time limit on this exercise, take as long as you need to show us your development skills.
 
-[Coding excercise](https://wiki.prodeasy.com/ui-coding-tests)
+[Coding excercise](https://wiki.prodeasy.com/ui-coding-tests) 
