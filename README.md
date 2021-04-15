@@ -1,6 +1,6 @@
 # Coding Test
 
-Do you want to join the engineering team at [Prodeasy](https://prodeasy.com)?
+Do you want to join the engineering team at [Prodeasy](https://prodeasy.com) as a UI developer?
 
 We have created this exercise in order to gain insights into your development skills. The focus should be, to apply a well-thought-out solution to create a structure, which is robust and scalable in the time frame provided. It’s ok if you are not able to complete the assignment. 
 
@@ -9,9 +9,9 @@ We have created this exercise in order to gain insights into your development sk
 
 You are free to use whatever technologies you want, unless instructed otherwise.
 
-- [Problem 1 : Discounts](./1-discounts.md)
-- [Problem 2 : Ordering](./2-ordering.md)
-- [Problem 3 : Local development](./3-local-development.md)
+- [Problem 1 : Planning calendar](https://wiki.prodeasy.com/ui-coding-tests#exercise-1-planning-calendar)
+- [Problem 2 : Prodeasy.com recreation](https://wiki.prodeasy.com/ui-coding-tests#exercise-2-recreate-prodeasy-website)
+- [Problem 3 : shopping cart](https://wiki.prodeasy.com/ui-coding-tests#exercise-3-shopping-cart)
 
 You can work on any problem that are comfortable with.
 
@@ -36,3 +36,4 @@ Make sure to add some documentation on how to run your app.
 
 There is no time limit on this exercise, take as long as you need to show us your development skills.
 
+[Coding excercise](https://wiki.prodeasy.com/ui-coding-tests)
