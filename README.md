@@ -1,4 +1,4 @@
-# coding-test
+# Coding Test
 
 Do you want to join the engineering team at [Prodeasy](https://prodeasy.com)?
 
