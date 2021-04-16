@@ -26,6 +26,8 @@ Or if you are new to GH you can follow the below process:
 
 - Push your code in your branch.
 
+- Push your cv to the same branch
+
 - Create a pull request for the main branch.
 
 - Share your pull request link at 
