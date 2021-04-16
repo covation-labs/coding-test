@@ -17,7 +17,7 @@ You can work on any problem that you're comfortable with.
 
 ## Procedure
 
-We would like you to send us (a link to) your pull request link (that we can reveiw) at career@prodeasy.com  
+We would like you to send us (a link to) your pull request link (that we can reveiw) at engineering.careers@prodeasy.com  
 
 Or if you are new to GH you can follow the below process:
 
