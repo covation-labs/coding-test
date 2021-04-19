@@ -7,13 +7,12 @@ We have created this exercise in order to gain insights into your development sk
 
 ## What to do?
 
-You are free to use whatever technologies you want, unless instructed otherwise.
+Code ONE of the following exercises.
 
 - [Problem 1 : Planning calendar](https://wiki.prodeasy.com/ui-coding-tests#exercise-1-planning-calendar)
 - [Problem 2 : Prodeasy.com recreation](https://wiki.prodeasy.com/ui-coding-tests#exercise-2-recreate-prodeasy-website)
 - [Problem 3 : Shopping cart](https://wiki.prodeasy.com/ui-coding-tests#exercise-3-shopping-cart)
 
-You can work on any problem that you're comfortable with.
 
 ## Procedure
 
