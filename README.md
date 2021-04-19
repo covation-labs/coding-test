@@ -31,7 +31,7 @@ Or if you are new to GH you can follow the below process:
 - Create a pull request for the main branch.
 
 - Share your pull request link at 
-drawat@prodeasy.com
+engineering.careers@prodeasy.com
 ```
 
 Make sure to add some documentation on how to run your app.
