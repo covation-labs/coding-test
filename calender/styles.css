@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;800&display=swap');
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: "Poppins";
+}
+
+#dates{
+    width: 100%;
+    max-height: 100%;
+}
+
+#days{
+    position: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, calc((100%/7)));
+    background-color: white;
+}
+
+#days>div{
+    border: 1px solid rgb(192, 191, 191);
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 0.7rem;
+}
+
+
+.month{
+    display: grid;
+    grid-template-columns: repeat(7, calc((100%/7)));
+}
+
+.month>div{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    font-size: 0.6rem;
+    height: 20vh;
+    padding: 1rem;
+    border: 1px solid rgb(192, 191, 191);
+    user-select: none;
+}
+
+.month>div:hover{
+    background-color: salmon;
+    font-size: 1rem;
+    color: white;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+.monthName{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: salmon;
+    border-top:10px solid salmon ;
+    border-bottom: 10px solid salmon;
+}
+
+
+
+#eventCont{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eventCont>div{
+    width: 50%;
+    min-height: 50%;
+    max-height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+#close{
+    top: 1rem;
+    left: 100%;
+    background-color: salmon;
+    color: white;
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+}
+
+#close:hover {
+    transform: scale(1.1);
+  }
+
+
+
+.eventItem{
+    /* Add shadows to create the "card" effect */
+    background-color: white;
+    border: 2px solid salmon;
+    border-radius: 0.7rem;
+    margin: 1rem ;
+    padding: 1rem;
+    font-size: 0.8rem;
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .eventItem:hover {
+    background-color: salmon;
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+  #addEvent{
+      background-color: salmon;
+      border:none;
+      color: white;
+      padding: 15px;
+      font-weight: 800;
+      transition: transform 0.3s;  
+      cursor: pointer;
+      border-radius: 10px;
+  }
+
+
+  #addEvent:hover{
+      transform: scale(1.1);
+  }
