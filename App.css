@@ -11,11 +11,3 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-#template-section {
-    max-width: 100%;
-}
-
-#template-section img {
-    max-width: 100%;
-}
