@@ -50,6 +50,10 @@ body {
     margin-top: 5rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 #main-sec h1 {
     font-size: 2rem;
     font-family: sans-serif;
@@ -129,6 +133,12 @@ body {
     margin: 4rem 0rem;
 }
 
+#sec-four, #sec-five, #sec-six, #sec-seven, #sec-eight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 #sec-three img {
     width: 200px;
 }
@@ -145,8 +155,6 @@ body {
 
 }
 
-#sec-four, #sec-five, #sec-six, #sec-seven, #sec-eight {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
+
+
+
