@@ -50,6 +50,7 @@ body {
     margin-top: 5rem;
 }
 
+/* making all images for 100% width as minified */
 img {
     max-width: 100%;
 }
@@ -133,6 +134,7 @@ img {
     margin: 4rem 0rem;
 }
 
+/* minified rest sections to 2 grid sections(uses less code) */
 #sec-four, #sec-five, #sec-six, #sec-seven, #sec-eight {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -152,7 +154,6 @@ img {
 
 #sec-three li {
     padding-bottom: 10px;
-
 }
 
 
