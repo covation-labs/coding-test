@@ -131,18 +131,22 @@ img {
 #sec-three{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 4rem 0rem;
+    margin-top: 3rem;
+    margin-bottom: ;
+    gap: 2rem;
+    padding: 0rem 1rem;
 }
 
 /* minified rest sections to 2 grid sections(uses less code) */
 #sec-four, #sec-five, #sec-six, #sec-seven, #sec-eight {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 5rem;
+    padding: 2rem;
 }
 
 #sec-three img {
-    width: 200px;
+    max-width: 100%;
 }
 
 #sec-three h1 {
@@ -154,6 +158,8 @@ img {
 
 #sec-three li {
     padding-bottom: 10px;
+    font-family: roboto;
+    font-size: 0.8rem;
 }
 
 
