@@ -149,7 +149,9 @@ img {
     margin-top: 1.5rem;
 }
 
-#sec-four p, #sec-five p, #sec-six p, #sec-seven p, #sec-eight p {
+/* selecting all para */
+
+section p {
     font-family: roboto;
     font-size: 0.8rem;
 }
@@ -172,7 +174,7 @@ h1 {
     font-family: sans-serif;
     font-weight: 900;
     font-size: 1rem;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
 }
 
 #sec-three li {
@@ -181,7 +183,7 @@ h1 {
     font-size: 0.75rem;
 }
 
-#sec-four ul, #sec-five ul, #sec-six ul, #sec-seven ul, #sec-eight ul {
+section ul {
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
@@ -195,7 +197,10 @@ h1 {
     font-size: 14px;margin: 5px;
     border-radius: 20px;
     color: #424b5a;
+}
 
+section h1 {
+    line-height: 1em;
 }
 
 
