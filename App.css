@@ -16,6 +16,10 @@
     line-height: 140%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 1200px;
     margin: 0 auto;
@@ -148,7 +152,6 @@ img {
 #sec-four p, #sec-five p, #sec-six p, #sec-seven p, #sec-eight p {
     font-family: roboto;
     font-size: 0.8rem;
-    
 }
 
 /* for all h1 in every section */
@@ -178,6 +181,9 @@ h1 {
     font-size: 0.75rem;
 }
 
+#sec-four .video-div {
+    
+}
 
 
 
