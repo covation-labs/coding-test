@@ -132,7 +132,6 @@ img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 3rem;
-    margin-bottom: ;
     gap: 2rem;
     padding: 0rem 1rem;
 }
@@ -144,6 +143,16 @@ img {
     gap: 5rem;
     padding: 2rem;
 }
+
+/* for all h1 in every section */
+
+h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+
 
 #sec-three img {
     max-width: 100%;
