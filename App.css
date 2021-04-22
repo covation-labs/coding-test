@@ -130,10 +130,10 @@ img {
 
 #sec-three{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 15% 30% 15% 30%;
     margin-top: 3rem;
-    gap: 2rem;
-    padding: 0rem 1rem;
+    gap: 1.5rem;
+    padding: 0rem 0.5rem;
 }
 
 /* minified rest sections to 2 grid sections(uses less code) */
@@ -141,7 +141,14 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5rem;
-    padding: 2rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+#sec-four p, #sec-five p, #sec-six p, #sec-seven p, #sec-eight p {
+    font-family: roboto;
+    font-size: 0.8rem;
+    
 }
 
 /* for all h1 in every section */
@@ -154,9 +161,9 @@ h1 {
 
 
 
-#sec-three img {
-    max-width: 100%;
-}
+/* #sec-three img {
+    max-width: 80%;
+} */
 
 #sec-three h1 {
     font-family: sans-serif;
@@ -168,7 +175,7 @@ h1 {
 #sec-three li {
     padding-bottom: 10px;
     font-family: roboto;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
 
