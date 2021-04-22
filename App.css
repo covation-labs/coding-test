@@ -181,9 +181,23 @@ h1 {
     font-size: 0.75rem;
 }
 
-#sec-four .video-div {
-    
+#sec-four ul, #sec-five ul, #sec-six ul, #sec-seven ul, #sec-eight ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    font-family: poppins;
 }
+
+#sec-four li, #sec-five li, #sec-six li, #sec-seven li, #sec-eight li{
+    list-style-type: none;
+    padding: 5px 13px;
+    background-color: #ececec;
+    font-size: 14px;margin: 5px;
+    border-radius: 20px;
+    color: #424b5a;
+
+}
+
 
 
 
