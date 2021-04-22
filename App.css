@@ -15,14 +15,10 @@
     line-height: 140%;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     max-width: 1200px;
     margin: 0 auto;
-    overflow-x: hidden;
+    overflow-x: hidden;scroll-behavior: smooth;
 }
 
 #head {
@@ -201,11 +197,6 @@ section ul {
     font-size: 14px;margin: 5px;
     border-radius: 20px;
     color: #424b5a;
-}
-
-section h1:not(#sec-three) {
-    line-height: 1em;
-    margin-top: 1rem;
 }
 
 #sec-five {
