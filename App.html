@@ -69,11 +69,11 @@
 
     <!-- for youtube section -->
 
-    <div class="video-div">
+    <div class="video-div hidden">
         <iframe width="780" height="439" src="https://www.youtube.com/embed/FqAvSZcwj7s" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
         gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <button class="close-btn">&#10006;</button>
+        <button class="close-btn" onclick="showVideoDiv()">&#10006;</button>
 
     </div>
 
@@ -88,7 +88,7 @@
         <div class="play-div">
             <img src="https://prodeasy.com/images/Prodeasy_video_cover.webp" alt="producteasy-video">
             <img src="https://prodeasy.com/images/play-pink.webp" alt="play button to see video" class="play-btn"
-                onclick=playVideo()>
+            onclick=showVideoDiv()>
         </div>
     </section>
     <section id="sec-five">

@@ -1,7 +1,10 @@
-const playBtn = document.querySelector('.play-btn');
+//script for pop youtube video
 
-const playVideo = () => {
-    
+const showVideoDiv = () => {
+    let videoDiv = document.querySelector('.video-div');
+    if (videoDiv.style.display === "none") {
+        videoDiv.style.display = "block";
+    } else {
+        videoDiv.style.display = "none";
+    }
 }
-
-playBtn.addEventListener("click", playVideo);

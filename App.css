@@ -214,10 +214,10 @@ section ul {
     color: #424b5a;
 }
 
-.video-div {
+.play-div {
     position: relative;
 }
-.video-div .play-btn {
+.play-div .play-btn {
     position: absolute;
     top: 45%;
     cursor: pointer;
@@ -336,19 +336,24 @@ footer h1 {
         left: 0;
         max-width: 100%;
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.493);
+        background-color: rgba(0, 0, 0, 0.5);
     }
 
     .video-div iframe {
         margin-top: 4rem;
         max-width: 90%;
     }
+
     .close-btn {
         position: absolute;
-        margin: 1.5rem;
+        margin: 2rem;
         cursor: pointer;
-        padding: 3px;
+        padding: 5px;
         right: 0; 
+    }
+
+    .hidden {
+        display: none;
     }
 
 /* responsiveness for team section */
