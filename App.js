@@ -1,3 +1,7 @@
-const playBtn = document.querySelector('.play-btn').addEventListener("click", function playVideo() {
-    console.log("clicked!!");
-});
+const playBtn = document.querySelector('.play-btn');
+
+const playVideo = () => {
+    
+}
+
+playBtn.addEventListener("click", playVideo);
