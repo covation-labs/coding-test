@@ -310,6 +310,7 @@ footer h1 {
     justify-content: space-between;
     font-family: poppins;
     font-size: small;
+    flex-wrap: wrap;
 }
 
 .icons-container img {
@@ -352,7 +353,10 @@ footer h1 {
     #sec-six,
     #sec-seven,
     #sec-eight {
-        grid-template-columns: 60%;
+        grid-template-columns: 100%;
+        padding: 2rem;
+        font-size: 3vw;
+        line-height: 140%;
     }
 }
 
@@ -368,7 +372,37 @@ footer h1 {
         font-size: 3vw;
     }
     #main-sec p {
-        font-size: 3.2vw;
+        font-size: 3.5vw;
         padding: 0 2.5rem;
+        line-height: 140%;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    #sec-two {
+        grid-template-columns: auto;
+    }
+    footer .footer-container, .footer-copyright {
+        display: block;
+        text-align: center;
+        font-size: 3vw;
+    }
+    footer .footer-container div:nth-child(1) {
+        justify-content: center;
+    }
+    footer h1 {
+        font-size: 4vw;
+        padding-bottom: 10px;
+        padding-right: 15px;
+    }
+    #sec-nine , #sec-nine p{
+        font-size: 3.5vw;
+    }
+    #main-sec {
+        margin-top: 1.5rem;
+    }
+    section p, section h1 {
+        font-size: 4vw;
+        line-height: 140%;
     }
 }
