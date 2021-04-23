@@ -357,6 +357,8 @@ footer h1 {
         padding: 2rem;
         font-size: 3vw;
         line-height: 140%;
+        padding: 1rem;
+        margin: 1rem;
     }
 }
 
@@ -369,7 +371,7 @@ footer h1 {
         display: block;
     }
     #navbar a {
-        font-size: 3vw;
+        font-size: 3.3vw;
     }
     #main-sec p {
         font-size: 3.5vw;
@@ -401,8 +403,26 @@ footer h1 {
     #main-sec {
         margin-top: 1.5rem;
     }
+    #main-sec h1 {
+        font-size: 4vw;
+        padding: 15px;
+    }
+    #main-sec p {
+        font-size: 3vw;
+    }
     section p, section h1 {
         font-size: 4vw;
         line-height: 140%;
+    }
+    #sec-three {
+        grid-template-columns: auto;
+    }
+    #sec-three div {
+        margin: 0 auto;
+        padding: 0rem 1rem;
+    }
+    #sec-three li {
+        font-size: 3.5vw;
+        line-height: normal;
     }
 }
