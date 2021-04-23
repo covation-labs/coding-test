@@ -2,9 +2,9 @@
 
 const showVideoDiv = () => {
     let videoDiv = document.querySelector('.video-div');
-    if (videoDiv.style.display === "none") {
-        videoDiv.style.display = "block";
-    } else {
+    if (videoDiv.style.display === "block") {
         videoDiv.style.display = "none";
+    } else {
+        videoDiv.style.display = "block";
     }
 }
