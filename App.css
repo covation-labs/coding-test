@@ -214,6 +214,14 @@ section ul {
     color: #424b5a;
 }
 
+.video-div img {
+    position: relative;
+}
+
+.video-div a img {
+    position: absolute;
+}
+
 #sec-five {
     background-color: #f8f9fa;
 }
@@ -381,6 +389,10 @@ footer h1 {
 }
 
 @media only screen and (max-width: 690px) {
+    #sec-three .sec-three-div {
+        margin: 0 1rem;
+        line-height: normal;
+    }
     #sec-two {
         grid-template-columns: auto;
     }
@@ -418,14 +430,14 @@ footer h1 {
         grid-template-columns: auto;
     }
     #sec-three div {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         padding: 0rem 1rem;
     }
     #sec-three li {
-        font-size: 3.5vw;
+        font-size: 3vw;
         line-height: normal;
     }
-    #sec-two{
+    #sec-two {
         display: block;
         text-align: center;
     }
