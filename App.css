@@ -135,7 +135,7 @@ img {
 #sec-two > .template-img {
     width: 100%;
     padding: 0rem 2rem;
-    margin-bottom: -7px;
+    margin-bottom: -12px;
 }
 
 #sec-three {
@@ -214,12 +214,13 @@ section ul {
     color: #424b5a;
 }
 
-.video-div img {
+.video-div {
     position: relative;
 }
-
 .video-div a img {
     position: absolute;
+    top: 45%;
+    left: 45%;
 }
 
 #sec-five {
