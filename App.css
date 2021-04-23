@@ -341,13 +341,14 @@ footer h1 {
 
     .video-div iframe {
         margin-top: 4rem;
+        max-width: 90%;
     }
     .close-btn {
         position: absolute;
-        margin-top: 2rem;
-        margin-left: 5rem;
+        margin: 1.5rem;
         cursor: pointer;
         padding: 3px;
+        right: 0; 
     }
 
 /* responsiveness for team section */
