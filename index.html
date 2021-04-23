@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="SV.png" itemtype="image/png" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" async></script>
+    <title>Calender</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <main class="main">
+        <nav class="nav">
+            <button class="today">Today</button>
+            <div class="left">
+                <img src="./Resources/left.png" class="img" />
+            </div>
+            <div class="right">
+                <img src="./Resources/right.png" class="img" />
+            </div>
+            <div class="month" id="month"></div>
+        </nav>
+        <section class="day-flex">
+            <div class="big-text">SUN</div>
+            <div class="big-text">MON</div>
+            <div class="big-text">TUE</div>
+            <div class="big-text">WED</div>
+            <div class="big-text">THU</div>
+            <div class="big-text">FRI</div>
+            <div class="big-text">SAT</div>
+            <div class="small-text">S</div>
+            <div class="small-text">M</div>
+            <div class="small-text">T</div>
+            <div class="small-text">W</div>
+            <div class="small-text">T</div>
+            <div class="small-text">F</div>
+            <div class="small-text">S</div>
+        </section>
+        <section class="month-grid"></section>
+        <div class="popup-cover">
+            <div class="popup-box">
+                <div class="head-container">
+                    <div class="popup-header">Add an Event</div>
+                    <div class="close-popup">
+                        <div class="x1"></div>
+                        <div class="x2"></div>
+                    </div>
+                </div>
+                <div class="popup-input">
+                    <input class="event-name" type="text" placeholder="Event Name" />
+                    <input class="event-date" type="date" />
+                    <input class="event-desc" type="text" placeholder="Event Description" />
+                </div>
+                <div class="popup-save">
+                    <button class="cancel">Cancel</button>
+                    <button type="submit" class="save">Save</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
