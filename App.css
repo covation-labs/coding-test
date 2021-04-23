@@ -217,9 +217,10 @@ section ul {
 .video-div {
     position: relative;
 }
-.video-div a img {
+.video-div .play-btn {
     position: absolute;
     top: 45%;
+    cursor: pointer;
     left: 45%;
 }
 
@@ -327,14 +328,27 @@ footer h1 {
 }
 
 /* javascript section for youtube video  */
-    #video-div, #video-div iframe {
-        width: 90%;
-        margin: 0 auto;
+    .video-div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.493);
     }
 
-
-
-
+    .video-div iframe {
+        margin-top: 4rem;
+    }
+    .close-btn {
+        position: absolute;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        cursor: pointer;
+        padding: 3px;
+    }
 
 /* responsiveness for team section */
 
