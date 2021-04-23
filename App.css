@@ -83,10 +83,11 @@ img {
     font-family: roboto;
     font-weight: 900;
     border-radius: 8px;
-    width: 227px;
+    width: 200px;
     height: 45px;
     cursor: pointer;
     font-size: 0.7rem;
+    margin: 5px;
 }
 
 .black-btn {
@@ -219,7 +220,7 @@ section ul {
 }
 .play-div .play-btn {
     position: absolute;
-    top: 40%;
+    top: 45%;
     cursor: pointer;
     left: 45%;
 }
@@ -349,8 +350,8 @@ footer h1 {
         position: absolute;
         margin: 2rem;
         cursor: pointer;
-        padding: 5px;
-        right: 0; 
+        padding: 10px;
+        right: 0;
     }
 
     .hidden {
