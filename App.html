@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="App.css">
     <link rel="shortcut icon" href="https://prodeasy.com/images/main.png" type="image/icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto|Lobster" rel="stylesheet">
-    <title>prodeasy Clone</title>
+    <title id="title">prodeasy Clone</title>
 </head>
 
 <body>
@@ -71,10 +71,8 @@
 
     <div class="video-div hidden">
         <iframe width="780" height="439" src="https://www.youtube.com/embed/FqAvSZcwj7s" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-        gyroscope; picture-in-picture" allowfullscreen></iframe>
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <button class="close-btn" onclick="showVideoDiv()">&#10006;</button>
-
     </div>
 
     <!-- video section -->
@@ -87,8 +85,11 @@
         </div>
         <div class="play-div">
             <img src="https://prodeasy.com/images/Prodeasy_video_cover.webp" alt="producteasy-video">
-            <img src="https://prodeasy.com/images/play-pink.webp" alt="play button to see video" class="play-btn"
-            onclick=showVideoDiv()>
+            <a href="#head">
+                <img src="" alt="play button to see video" class="play-btn"
+                onclick=showVideoDiv()>
+            </a>
+
         </div>
     </section>
     <section id="sec-five">

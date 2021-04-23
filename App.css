@@ -219,7 +219,7 @@ section ul {
 }
 .play-div .play-btn {
     position: absolute;
-    top: 45%;
+    top: 40%;
     cursor: pointer;
     left: 45%;
 }
@@ -330,6 +330,7 @@ footer h1 {
 /* javascript section for youtube video  */
     .video-div {
         position: absolute;
+        height: 200vh;
         top: 0;
         right: 0;
         bottom: 0;
@@ -340,7 +341,7 @@ footer h1 {
     }
 
     .video-div iframe {
-        margin-top: 4rem;
+        margin-top: 6rem;
         max-width: 90%;
     }
 
@@ -354,6 +355,10 @@ footer h1 {
 
     .hidden {
         display: none;
+    }
+
+    .play-btn {
+        width: min-content;
     }
 
 /* responsiveness for team section */
