@@ -1,18 +1,23 @@
-// following are variables defined
+// have used Titillium Web font, imported from google fonts
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap');
+
+//------------------//
+
+// following are sass variables defined
+
+// used in for different res display screens
 $xl: 87.5em; // 4k and hi-res desktop
 $lg: 60em; // 1080 and hi-res laptops
 $med: 40em; // hi-res tablets and low-res laptops
 $sm: 28em; // mobile and low-res tablets
 $xs: 16em; // mobile only
+// colors
 $pink: #ff3b72;
 $light-pink: #ffd9e3;
 $very-light-pink: #f0e6e9;
 $dark-pink: #ff054e;
 
-
-// have used Titillium Web font, imported from google fonts
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap');
-
+//--------------------//
 
 // mixin function for displaying a responsive website
 @mixin responsive ($width)  {
@@ -22,12 +27,14 @@ $dark-pink: #ff054e;
   }
 }
 
+// for all horizontal line
 @mixin hr {
   width: 70%;
   height: 2px;
   color: $very-light-pink;
 }
 
+// for all h2 tags
 @mixin h2 {
   //border: 2px solid;
   color: $dark-pink;
@@ -37,27 +44,39 @@ $dark-pink: #ff054e;
   text-align: center;
 }
 
+// for all h4 tags
 @mixin h4 {
-  //border: 2px solid;
   color: black;
   line-height: 1;
   text-align: center;
   font-size: 0.9em;
-  margin-top: 0vh;
+  margin-top: 7vh;
   margin-bottom: 1vh;
+
+  // for higher res displays
+  @include responsive ( $sm ) {
+    margin-top: 0vh;
+    text-align: left;
+  }
 }
 
+// for displaying more than 1 element in a single row for hi res device
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+// used in content 3 div
 @mixin content-3-post {
+
   // for mobile devices
   @include responsive ($xs) {
     display: block;
-    //margin-top: 5vh;
   }
 
-  // will display image/video and content in single row for any higher res of screen
+  // will display image and content in single row for any higher res of screen
   @include responsive ($sm) {
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     margin-top: 10vh;
     padding-top: 10vh;
   }
@@ -67,10 +86,6 @@ $dark-pink: #ff054e;
 
     h4 {
       @include h4;
-
-      @include responsive ($sm) {
-        text-align: left;
-      }
     }
 
     p {
@@ -130,6 +145,7 @@ body  {
   // setting custom font for whole page
   font-family: 'Titillium Web', sans-serif;
 
+  // setting different font sizes for different devices
   // smartphone devices
   @include responsive ($xs) {
     font-size: 1.4em;
@@ -159,37 +175,30 @@ body  {
 
   // following will be apllied from high-end-mobile and low-res tabs to 4k res
   @include responsive ($sm) {
-    // following helped to display 'header' child elements in single line
-    // for easy positioning of child element
-    display: flex;
-    // sets logo and signin link to left and right position respectively
-    justify-content: space-between;
-    // shows child elements in single line rather than multiline
+    @include flex;
     flex-wrap: wrap;
   }
 
   img {
-    //border: 2px Solid;
     @include responsive( $xs ) {
       display: block;
       width: 100%;
     }
     @include responsive( $sm ) {
-        display: inline;
-        width: 24%;
+      display: inline;
+      width: 24%;
     }
 
     @include responsive( $med ) {
-        width: 25.5%;
+      width: 25.5%;
     }
 
     @include responsive( $lg ) {
-        width: 27%;
+      width: 27%;
     }
   }
 
   a  {
-    //border: 2px Solid;
     // curves the borders of the border
     border-radius: 12px;
     // so that clickable link is reduced in terms of width such that 'sign in' is centered with browser width
@@ -218,20 +227,22 @@ body  {
   }
 }
 
+// apllies style to all hr element
 hr {
   @include hr;
+}
+
+// applies style to all h2 element in page
+h2 {
+  // importing above code block of h2 @mixin here..
+  @include h2;
 }
 
 #content-1 {
   text-align: center;
   margin-bottom: 10vh;
 
-  h2 {
-    // importing above code block of h2 @mixin here..
-    @include h2;
-  }
   p {
-    //border: 2px solid;
     // will display font 0.8 times that of what default is defined for different device sizes
     font-size: 0.8em;
   }
@@ -244,10 +255,6 @@ hr {
 }
 
 #content-2  {
-  h2 {
-    @include h2;
-  }
-
   #values {
     font-size: 0.8em;
     // will display ul elements in block for mobile devices
@@ -259,8 +266,7 @@ hr {
 
     // following will be apllied from high-end-mobile and low-res tabs to 4k res
     @include responsive ($sm) {
-      display: flex;
-      justify-content: space-between;
+      @include flex;
       //removes unecessory margins of ul elements
       margin: 0vh 0vw;
     }
@@ -274,7 +280,6 @@ hr {
 
     #founder-value  {
       ul {
-        //border: 2px solid;
         @include responsive ($xs) {
           // no margins at the end of ul
           margin-bottom: 0vh;
@@ -290,7 +295,6 @@ hr {
     }
     #manager-value  {
       ul {
-        /border: 2px solid;
         @include responsive ($xs) {
           // show no margin at top as whole list will be shown as single ul
           margin-top: 0vh;
@@ -306,10 +310,7 @@ hr {
 }
 
 #content-3  {
-  h2 {
-    @include h2;
-  }
-
+  // space between at the end of the content and hr line
   margin-bottom: 10vh;
 
   #build  {
@@ -319,10 +320,9 @@ hr {
       margin-top: 5vh;
       }
 
-    // will display image/video and content in single row for any higher res of screen
+    // will display video and content in single row for any higher res of screen
     @include responsive ($sm) {
-      display: flex;
-      justify-content: space-between;
+      @include flex;
       // space between h2 tag and content
       margin-top: 8vh;
       }
@@ -481,11 +481,9 @@ hr {
 
 
 #footer {
-  //flex-wrap: wrap;
   #social {
     // displays all social links in 1 row
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     // takes full screen width
     width: 100%;
     // aligns icon in center in their box
@@ -505,14 +503,13 @@ hr {
   #legal  {
     // universal
     // display both links side by side
-    display: flex;
-    justify-content: space-between;
+    @include flex;
     // space between icons
     margin-top: 3vh;
     margin-bottom: 0vh;
 
     a {
-      // only for mobile, setting margin for links
+      // for mobile, setting margin for links
       margin: 0vh 0vw;
       // universal
       color:black;
@@ -543,11 +540,12 @@ hr {
 
   #end {
     margin-top: 3vh;
+    // copyright
     p {
       text-align: center;
       font-weight: 200;
       font-style: italic;
-      font-size: 0.1em;
+      font-size: 0.3em;
     }
   }
 }

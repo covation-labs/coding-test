@@ -68,15 +68,16 @@ hr {
   height: 2px;
   color: #f0e6e9; }
 
+h2 {
+  color: #ff054e;
+  margin-top: 10vh;
+  margin-bottom: 3vh;
+  line-height: 1.1;
+  text-align: center; }
+
 #content-1 {
   text-align: center;
   margin-bottom: 10vh; }
-  #content-1 h2 {
-    color: #ff054e;
-    margin-top: 10vh;
-    margin-bottom: 3vh;
-    line-height: 1.1;
-    text-align: center; }
   #content-1 p {
     font-size: 0.8em; }
   #content-1 p.launch {
@@ -85,12 +86,6 @@ hr {
     font-style: italic;
     font-size: 1em; }
 
-#content-2 h2 {
-  color: #ff054e;
-  margin-top: 10vh;
-  margin-bottom: 3vh;
-  line-height: 1.1;
-  text-align: center; }
 #content-2 #values {
   font-size: 0.8em; }
   @media (min-width: 16em) {
@@ -120,12 +115,6 @@ hr {
 
 #content-3 {
   margin-bottom: 10vh; }
-  #content-3 h2 {
-    color: #ff054e;
-    margin-top: 10vh;
-    margin-bottom: 3vh;
-    line-height: 1.1;
-    text-align: center; }
   @media (min-width: 16em) {
     #content-3 #build {
       display: block;
@@ -142,8 +131,12 @@ hr {
       line-height: 1;
       text-align: center;
       font-size: 0.9em;
-      margin-top: 0vh;
+      margin-top: 7vh;
       margin-bottom: 1vh; }
+      @media (min-width: 28em) {
+        #content-3 #build .text h4 {
+          margin-top: 0vh;
+          text-align: left; } }
       @media (min-width: 28em) {
         #content-3 #build .text h4 {
           text-align: left; } }
@@ -183,8 +176,7 @@ hr {
         max-width: 800px; } }
   @media (min-width: 16em) {
     #content-3 #discover {
-      display: block;
-      margin-top: 5vh; } }
+      display: block; } }
   @media (min-width: 28em) {
     #content-3 #discover {
       display: flex;
@@ -198,10 +190,11 @@ hr {
       line-height: 1;
       text-align: center;
       font-size: 0.9em;
-      margin-top: 0vh;
+      margin-top: 7vh;
       margin-bottom: 1vh; }
       @media (min-width: 28em) {
         #content-3 #discover .text h4 {
+          margin-top: 0vh;
           text-align: left; } }
     #content-3 #discover .text p {
       margin: 3.5vh 0vw;
@@ -232,8 +225,7 @@ hr {
         max-width: 400px; } }
   @media (min-width: 16em) {
     #content-3 #validate {
-      display: block;
-      margin-top: 5vh; } }
+      display: block; } }
   @media (min-width: 28em) {
     #content-3 #validate {
       display: flex;
@@ -247,10 +239,11 @@ hr {
       line-height: 1;
       text-align: center;
       font-size: 0.9em;
-      margin-top: 0vh;
+      margin-top: 7vh;
       margin-bottom: 1vh; }
       @media (min-width: 28em) {
         #content-3 #validate .text h4 {
+          margin-top: 0vh;
           text-align: left; } }
     #content-3 #validate .text p {
       margin: 3.5vh 0vw;
@@ -281,8 +274,7 @@ hr {
         max-width: 400px; } }
   @media (min-width: 16em) {
     #content-3 #plan {
-      display: block;
-      margin-top: 5vh; } }
+      display: block; } }
   @media (min-width: 28em) {
     #content-3 #plan {
       display: flex;
@@ -296,10 +288,11 @@ hr {
       line-height: 1;
       text-align: center;
       font-size: 0.9em;
-      margin-top: 0vh;
+      margin-top: 7vh;
       margin-bottom: 1vh; }
       @media (min-width: 28em) {
         #content-3 #plan .text h4 {
+          margin-top: 0vh;
           text-align: left; } }
     #content-3 #plan .text p {
       margin: 3.5vh 0vw;
@@ -330,8 +323,7 @@ hr {
         max-width: 400px; } }
   @media (min-width: 16em) {
     #content-3 #confidence {
-      display: block;
-      margin-top: 5vh; } }
+      display: block; } }
   @media (min-width: 28em) {
     #content-3 #confidence {
       display: flex;
@@ -345,10 +337,11 @@ hr {
       line-height: 1;
       text-align: center;
       font-size: 0.9em;
-      margin-top: 0vh;
+      margin-top: 7vh;
       margin-bottom: 1vh; }
       @media (min-width: 28em) {
         #content-3 #confidence .text h4 {
+          margin-top: 0vh;
           text-align: left; } }
     #content-3 #confidence .text p {
       margin: 3.5vh 0vw;
@@ -455,6 +448,6 @@ hr {
     text-align: center;
     font-weight: 200;
     font-style: italic;
-    font-size: 0.1em; }
+    font-size: 0.3em; }
 
 /*# sourceMappingURL=main.css.map */
