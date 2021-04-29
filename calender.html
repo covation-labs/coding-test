@@ -1,0 +1,217 @@
+<html>
+<head>
+    <title>Monthly View</title>
+    <link rel="stylesheet" href="calenderstyle.css" type="text/css" />
+    <style>*{margin:0;padding:0;}
+
+        table{
+            border-collapse: collapse;
+            width:70%;margin-left:5%;margin-top:20px;
+        }
+        
+        table tr td{
+            text-align:center;
+            color:grey;
+            width:10%;
+            height:80px;
+            border:1px solid grey;
+        }</style>
+</head>
+<body>
+    <table id="table">
+        <tr>
+            <th>S</th>
+            <th>M</th>
+            <th>T</th>
+            <th>W</th>
+            <th>T</th>
+            <th>F</th>
+            <th>S</th>
+        </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+      <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+<button onclick="select(datetoday)">Select</button>
+
+</body>
+<script>
+    date = new Date();
+    daytoday = date.getDay();
+    datetoday = date.getDate();
+    // console.log(datetoday)   
+    days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+    dates = [];
+
+table = document.getElementById("table");
+
+datebackto1 = (datetoday % 7) - 1;
+daytoday = daytoday - datebackto1;
+if (daytoday < 0)
+daytoday += 7 
+
+// console.log(datebackto1);
+// console.log(daytoday)
+
+
+eofmonth = date.getMonth() + 1;
+
+switch(eofmonth)
+{
+    case 1:
+    eofmonth = 31;
+    break
+
+
+    case 2:
+    eofmonth = 28;
+    break
+
+    case 3:
+    eofmonth = 31;
+    break
+
+    case 4:
+    eofmonth = 30;
+    break
+
+    case 5:
+    eofmonth = 31;
+    break
+
+    case 6:
+    eofmonth = 30;
+    break
+
+    case 7:
+    eofmonth = 31;
+    break
+
+    case 8:
+    eofmonth = 31;
+    break
+
+    case 9:
+    eofmonth = 30;
+    break
+
+    case 10:
+    eofmonth = 31;
+    break
+
+    case 11:
+    eofmonth = 30;
+    break
+
+    case 12:
+    eofmonth = 31;
+    break
+
+    
+}
+//   console.log(eofmonth)
+i = 1;
+while(i <= eofmonth)
+{
+    
+    document.getElementsByTagName('td')[daytoday].innerHTML = i; 
+    document.getElementsByTagName('td')[daytoday].id = i; 
+    daytoday++;  
+    i++;
+}
+daytoday = date.getDay();
+datetoday = date.getDate();
+
+ document.getElementById(datetoday).style.color = 'black'
+    i=0;
+    while(i <= 29)
+    {
+
+    dates[i] = i+1;
+    i++;
+
+    }
+    // console.log(dates)
+ 
+    class dateobjects{
+ 
+
+        constructor(param, task){
+            this.date = param;
+            this.task = task;
+
+        }
+        
+    }
+    
+    
+    //initialising all dates as objects
+    
+    i=0;
+ 
+
+    while(i<=29)
+{
+    dates[i] = new dateobjects(i + 1);
+
+    // console.log(dates[i].date)
+
+    i++;
+}
+select=()=>{
+
+}
+// console.log(dates)
+</script>
+</html>
